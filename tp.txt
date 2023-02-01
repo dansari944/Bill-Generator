@@ -1,0 +1,13 @@
+{
+            Name: "Name",
+            shopName: "shopName",
+            textarea: "textarea",
+            cityocustomer: "cityocustomer",
+            gstnocustomer: "gstnocustomer"
+        },{
+            Name: "Name1",
+            shopName: "shopName1",
+            textarea: "textarea1",
+            cityocustomer: "cityocustomer1",
+            gstnocustomer: "gstnocustomer1"
+        }

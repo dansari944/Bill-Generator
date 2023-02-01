@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    font-size: 17px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    border: 1px solid black;
+    padding: 1%;
+    margin-top: 20px;
+}
+
+.nav-bar {
+    font-weight: 900;
+    padding: 0 5px;
+
+}
+
+.detail-skinmoda {
+    display: flex;
+    position: absolute;
+
+}
+
+#detail h3 {
+    margin-left: 190px;
+}
+
+.detail-skinmoda img {
+    width: 160px;
+    padding: 1px;
+    border: 1px solid black;
+    height: 140px;
+}
+
+#detail p {
+    margin-left: 190px;
+}
+
+.bille {
+    padding-left: 20px;
+}
+
+.second-row {
+    display: flex;
+    width: 100%;
+    line-height: 40px;
+    height: max-content;
+    justify-content: space-around;
+}
+
+#textarea {
+    resize: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+}
+
+
+.billing {
+    font-size: large;
+}
+
+#enterName {
+    width: 200px;
+    font-weight: 700;
+}
+
+
+.skinmoda-details {
+    float: right;
+
+}
+
+#detail {
+    line-height: 27px;
+}
+
+#cars {
+    border: none;
+    font-size: 16px;
+
+}
+
+.listing-products {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.title-product {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.listing-products li {
+    margin: 3px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.listing-products .description {
+    width: 350px;
+}
+
+.listing-products .description input {
+    width: 200px;
+    font-size: 14px;
+    border: none;
+}
+
+li input {
+    width: 75px;
+    font-size: 14px;
+    border: none;
+}
+
+.right input {
+    width: 80px;
+    border: none;
+}
+
+.right button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.calculation {
+    width: 95%;
+}
+
+.calculation .left {
+    float: left;
+}
+
+.calculation .right {
+    float: right;
+}
+
+
+.calculation .right .gross {
+    padding: 2px 0px;
+}
+
+
+.total-container {
+    background-color: rgb(95, 76, 76);
+    color: white;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.total-container .let {
+    background-color: rgb(95, 76, 76);
+    width: 80%;
+    float: left;
+}
+
+.total-container .right {
+    background-color: rgb(95, 76, 76);
+    width: 10%;
+    justify-content: end;
+}
+
+.last-container {
+    border: 2px solid black;
+    height: 200px;
+    padding: 20px;
+    width: 100%;
+    line-height: 25px;
+}
+
+.last-1-container {
+    float: left;
+}
+
+.last-2-container {
+    float: right;
+}
+
+.code {
+    font-size: 10px;
+    color: royalblue;
+    border: none;
+}

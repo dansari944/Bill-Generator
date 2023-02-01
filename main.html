@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Copy</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stle.css">
+</head>
+
+<body>
+    <main>
+        <div id="detail">
+            <span class="detail-skinmoda"><img src="logo1.bmp" height="180px" alt=""></span>
+            <h3>SKIN MODA</h3>
+            <p> Office No. 2B-85, Phoenix Paragon Plaza,
+                LBS Marg, Kurla West, Mumbai - 400070.</p>
+            <p>E-Commerce : <a href="https://www.skinmoda.com">www.skinmoda.com</a> , Email : <a
+                    href="https://support@skinmoda.com">support@skinmoda.com</a>,<br> Contact : +91 9022033047</p>
+        </div>
+        <br><br>
+        <hr><br>
+        <span class="bille"><b>Bill to,</b>
+        </span>
+        <div class="second-row">
+
+            <div class="billing">
+                <input type="text" onkeyup="showResult()" id="enterName" Placeholder="Search Name.."
+                    style="width:180px; border: none;"><br>
+                <b id="shopName">Shop Name</b><br>
+                <textarea name="textarea" id="textarea"></textarea>
+            </div>
+            <div class="placeSupply">
+                <p><b>Place of Supply</b></p>
+                <p id="cityocustomer"></p>
+                <p><b>Customer's GST Number:</b></p>
+                <p id="gstnocustomer"></p>
+            </div>
+            <div class="skinmoda-details">
+                <p><input type="text" name="text" id="invoiceno" style="width:260px;border:none;font-size:17px"
+                        value="Invoice No SM/002/08/202223"></p>
+                <p>GST No. <b>27AJTPA1778K1ZP</b></p>
+                <p>Company's PAN.<b> AJTPA1778K</b></p>
+                </p>
+            </div>
+        </div>
+        <div class="listing-products">
+            <div class="description">
+                <ul><span class="title-product">Description of Goods</span>
+                    <li><input type="text" id="product1" class="product-name" onkeyup="prod1()"><span id="product-code1"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product2" class="product-name" onkeyup="prod2()"><span id="product-code2"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product3" class="product-name" onkeyup="prod3()"><span id="product-code3"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product4" class="product-name" onkeyup="prod4()"><span id="product-code4"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product5" class="product-name" onkeyup="prod5()"><span id="product-code5"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product6" class="product-name" onkeyup="prod6()"><span id="product-code6"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product7" class="product-name" onkeyup="prod7()"><span id="product-code7"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product8" class="product-name" onkeyup="prod8()"><span id="product-code8"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product9" class="product-name" onkeyup="prod9()"><span id="product-code9"
+                            class="code"> </span></li>
+                    <li><input type="text" id="product10" class="product-name" onkeyup="prod10()"><span
+                            id="product-code10" class="code"> </span></li>
+                    <li><input type="text" id="product11" class="product-name" onkeyup="prod11()"><span
+                            id="product-code11" class="code"> </span></li>
+                    <li><input type="text" id="product12" class="product-name" onkeyup="prod12()"><span
+                            id="product-code12" class="code"> </span></li>
+                    <li><input type="text" id="product13" class="product-name" onkeyup="prod13()"><span
+                            id="product-code13" class="code"> </span></li>
+                </ul>
+            </div>
+            <div class="HSNCode">
+                <ul><span class="title-product">HSNCode</span>
+                    <li><input type="text" id="hsn-code1"></li>
+                    <li><input type="text" id="hsn-code2"></li>
+                    <li><input type="text" id="hsn-code3"></li>
+                    <li><input type="text" id="hsn-code4"></li>
+                    <li><input type="text" id="hsn-code5"></li>
+                    <li><input type="text" id="hsn-code6"></li>
+                    <li><input type="text" id="hsn-code7"></li>
+                    <li><input type="text" id="hsn-code8"></li>
+                    <li><input type="text" id="hsn-code9"></li>
+                    <li><input type="text" id="hsn-code10"></li>
+                    <li><input type="text" id="hsn-code11"></li>
+                    <li><input type="text" id="hsn-code12"></li>
+                    <li><input type="text" id="hsn-code13"></li>
+                </ul>
+            </div>
+            <div class="quantity">
+                <ul><span class="title-product">Quantity</span>
+                    <li><input type="text" id="title-product1" onkeyup="quantitya()"></li>
+                    <li><input type="text" id="title-product2" onkeyup="quantityb()"></li>
+                    <li><input type="text" id="title-product3"></li>
+                    <li><input type="text" id="title-product4"></li>
+                    <li><input type="text" id="title-product5"></li>
+                    <li><input type="text" id="title-product6"></li>
+                    <li><input type="text" id="title-product7"></li>
+                    <li><input type="text" id="title-product8"></li>
+                    <li><input type="text" id="title-product9"></li>
+                    <li><input type="text" id="title-product10"></li>
+                    <li><input type="text" id="title-product11"></li>
+                    <li><input type="text" id="title-product12"></li>
+                    <li><input type="text" id="title-product13"></li>
+                </ul>
+            </div>
+            <div class="rate">
+                <ul> <span class="title-product">Rate in(INR)</span>
+                    <li><input type="text" id="rate-product1"></li>
+                    <li><input type="text" id="rate-product2"></li>
+                    <li><input type="text" id="rate-product3"></li>
+                    <li><input type="text" id="rate-product4"></li>
+                    <li><input type="text" id="rate-product5"></li>
+                    <li><input type="text" id="rate-product6"></li>
+                    <li><input type="text" id="rate-product7"></li>
+                    <li><input type="text" id="rate-product8"></li>
+                    <li><input type="text" id="rate-product9"></li>
+                    <li><input type="text" id="rate-product10"></li>
+                    <li><input type="text" id="rate-product11"></li>
+                    <li><input type="text" id="rate-product12"></li>
+                    <li><input type="text" id="rate-product13"></li>
+                </ul>
+            </div>
+            <div class="Amount">
+                <ul><span class="title-product">Amount</span>
+                    <li><input type="text" id="amount1" disabled></li>
+                    <li><input type="text" id="amount2" disabled></li>
+                    <li><input type="text" id="amount3"></li>
+                    <li><input type="text" id="amount4"></li>
+                    <li><input type="text" id="amount5"></li>
+                    <li><input type="text" id="amount6"></li>
+                    <li><input type="text" id="amount7"></li>
+                    <li><input type="text" id="amount8"></li>
+
+                    <li><input type="text" id="amount9"></li>
+                    <li><input type="text" id="amount10"></li>
+                    <li><input type="text" id="amount11"></li>
+                    <li><input type="text" id="amount12"></li>
+                    <li><input type="text" id="amount13"></li>
+                </ul>
+            </div>
+        </div><br>
+        <div class="calculation">
+            <div class="left">
+                <div class="amount-in-ruppee" onclick="amount()" style="cursor: pointer;"> Amount Chargeable (in words)
+                    amount billed in INR
+                </div>
+                <br>
+                <b><div id="displayAmount">Amount will be display here</div></b>
+            </div>
+
+            <div class="right">
+
+                <div class="gross"><button onclick="totalgross()">Total Gross : </button><input type="text"
+                        id="total-gross"></div>
+                <div class="gross"><button onclick="totalcgst()">Total CGST : </button><input type="text"
+                        id="total-cgst"></div>
+                <div class="gross"><button onclick="totalsgst()">Total SGST : </button><input type="text"
+                        id="total-sgst"></div>
+                <div class="gross"><button onclick="totaligst()">Total IGST : </button><input type="text"
+                        id="total-igst"></div>
+                <div class="gross"><button onclick="totalround()">Round Off : </button><input type="text"
+                        id="total-round"></div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="total-container">
+            <span class="let">
+                TOTAL PAYABLE
+            </span>
+            <span class="right">₹ &nbsp;<span id="total"> </span>
+            </span>
+        </div>
+
+        </div>
+        <div class="last-container">
+            <div class="last-1-container">
+                <b>Please make the payment with below Bank detail (NEFT/RTGS/DD) :</b><br>
+                <b>Note</b>-Please make DD or cheque in favor of <b>"Skin Moda"</b><br>
+                <p><b>Bank Name :</b> HDFC Bank Ltd</p>
+                <p><b>IFSC Code :</b> HDFC0000239</p>
+                <p><b>Account No. :</b> 50200057809036</p>
+                <p><b>Branch :</b> PRUDENTIAL BUILDING, Hiranandani Business Park, Powai, Mumbai - 400076</p>
+
+            </div>
+            <div class="last-2-container">
+                <img src="sign.bmp" height="100px">
+
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function showResult() {
+
+            let enterName = document.getElementById('enterName').value;
+            if (enterName === "Danish") {
+                document.getElementById('shopName').innerHTML = "Crescent Leather";
+                document.getElementById('textarea').innerHTML = "New Maharashtra Building 90 feet Road Dharavi,Bandra Link Road  Mumbai - 17";
+                document.getElementById('cityocustomer').innerHTML = "Nagpur , Maharashtra";
+                document.getElementById('gstnocustomer').innerHTML = "AVHDG7846DDGS";
+            }
+            else if (enterName === "Habib") {
+                document.getElementById('shopName').innerHTML = "SkinModa";
+                document.getElementById('textarea').innerHTML = " 90 feet Road Dharavi,Bandra Link Road  Mumbai - 17";
+                document.getElementById('cityocustomer').innerHTML = "Mumbai MH";
+                document.getElementById('gstnocustomer').innerHTML = "KDU6747VIDG289";
+            }
+
+            else if (enterName === "Murtuza") {
+                document.getElementById('shopName').innerHTML = "Irfan Shop";
+                document.getElementById('textarea').innerHTML = " Pune Highway Crossing New Pune,MH -34";
+                document.getElementById('cityocustomer').innerHTML = "Mumbai MH";
+                document.getElementById('gstnocustomer').innerHTML = "GD45SU783A";
+            }
+            else {
+                document.getElementById('shopName').innerText = "NaN";
+                document.getElementById('textarea').innerText = "NaN";
+                document.getElementById('cityocustomer').innerText = "NaN";
+                document.getElementById('gstnocustomer').innerText = "NaN";
+            }
+        }
+        function prod1() {
+            let product1 = document.getElementById("product1").value;
+            if (product1 === 'abc') {
+                document.getElementById('rate-product1').value = "2300.00";
+                document.getElementById('product-code1').innerHTML = "SM-1215";
+            }
+        } function quantitya() {
+            rateproduct1 = document.getElementById('rate-product1').value;
+            titleproduct1 = document.getElementById('title-product1').value;
+            document.getElementById('amount1').value = Number(titleproduct1) * 2300.00;
+        }
+
+
+        function prod2() {
+            let product2 = document.getElementById("product2").value;
+            if (product2 === 'abcd') {
+                document.getElementById('rate-product2').value = "1200.00";
+                document.getElementById('product-code2').innerHTML = "SM-16715";
+            }
+        }
+
+        function quantityb() {
+            titleproduct2 = document.getElementById('title-product2').value;
+            rateproduct2 = document.getElementById('rate-product2').value;
+            document.getElementById('amount2').value = Number(titleproduct2) * 1200.00;
+        }
+
+
+
+
+        function totalgross() {
+            var amount1 = Number(document.getElementById('amount1').value);
+            var amount2 = Number(document.getElementById('amount2').value);
+            var amount3 = Number(document.getElementById('amount3').value);
+            var amount4 = Number(document.getElementById('amount4').value);
+            var amount5 = Number(document.getElementById('amount5').value);
+            var amount6 = Number(document.getElementById('amount6').value);
+            var amount7 = Number(document.getElementById('amount7').value);
+            var amount8 = Number(document.getElementById('amount8').value);
+            var amount9 = Number(document.getElementById('amount9').value);
+            var amount10 = Number(document.getElementById('amount10').value);
+            var amount11 = Number(document.getElementById('amount11').value);
+            var amount12 = Number(document.getElementById('amount12').value);
+            var amount13 = Number(document.getElementById('amount13').value);
+            a = amount1 + amount2 + amount3 + amount4 + amount5 + amount6 + amount7 + amount8 + amount9 + amount10 + amount11 + amount12 + amount13;
+            // a = (parseInt(amount1) + parseInt(amount2));
+            document.getElementById('total-gross').value = a
+        }
+        function totalcgst() {
+            b = Number(document.getElementById('total-gross').value) * 9 / 100;
+            document.getElementById('total-cgst').value = b
+            document.getElementById('total-igst').value = 0
+        }
+        function totalsgst() {
+            b = Number(document.getElementById('total-gross').value) * 9 / 100;
+            document.getElementById('total-sgst').value = b
+            document.getElementById('total-igst').value = 0
+        }
+        function totaligst() {
+            b = Number(document.getElementById('total-gross').value) * 18 / 100;
+            document.getElementById('total-igst').value = b
+            document.getElementById('total-cgst').value = 0
+            document.getElementById('total-sgst').value = 0
+        }
+        function totalround() {
+            tg = Number(document.getElementById('total-gross').value);
+            tc = Number(document.getElementById('total-cgst').value);
+            ti = Number(document.getElementById('total-igst').value);
+            ts = Number(document.getElementById('total-sgst').value);
+            let trr = 0
+            if (ti !== 0) { trr = trr + tg + ti }
+            else { trr = trr + tg + tc + ts }
+            document.getElementById('total-round').value = trr
+            document.getElementById('total').innerHTML = trr
+
+        }
+        function amount() {
+            let trr = toWords(document.getElementById('total-round').value);
+            document.getElementById('displayAmount').innerHTML = trr
+        }
+
+        function toWords(num) {
+            var a = ["", "one", "two", "three", "four", "five", "six", "seven",
+                "eight", "nine", "ten", "eleven", "twelve", "thirteen",
+                "fourteen", "fifteen", "sixteen", "sevenen", "eighteen", "nineteen"]
+            var b = ["", "", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+
+            if ((num = num.toString()).length > 9) return 'overflow';
+            n = ('00000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/)
+            console.log(n);
+
+            if (!n) return;
+
+            var str = "";
+            str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + " " + a[n[1][1]]) + " crore " : "";
+            str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + " " + a[n[2][1]]) + " lakh " : "";
+            str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + " " + a[n[3][1]]) + " thousand " : "";
+            str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + " " + a[n[4][1]]) + " hundred " : "";
+            str += (n[5] != 0) ? ((str != "") ? "and " : "") + (a[Number(n[5])] || b[n[5][0]] + " " + a[n[5][1]]) + " only " : " only ";
+
+            return str == "only" ? " " : str.toUpperCase();
+        }
+
+    </script>
+</body>
+
+</html>
